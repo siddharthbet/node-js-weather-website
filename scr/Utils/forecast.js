@@ -9,7 +9,7 @@ const getWeather = (latitude, longitude, callback) => {
         } else if (response.body.error) {
             callback('Cannot fetch the weather information', undefined)
         } else {
-            const forecast = 'It is currently '+ response.body.current.temperature + ' degrees out. It feels like ' + response.body.current.feelslike + ' degrees.'
+            const forecast = 'It is currently '+ response.body.current.temperature + ' degrees out. It feels like ' + response.body.current.feelslike + ' degrees. Humidity is ' + response.body.current.humidity + '%'
             callback(undefined, forecast)
         }
     })
