@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node scr/app.js"
+    "start": "node scr/app.js",
+    "dev": "nodemon scr/app.js -e js.hbs"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +14,8 @@
     "hbs": "^4.1.1",
     "request": "^2.88.2",
     "require": "^2.4.20"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
